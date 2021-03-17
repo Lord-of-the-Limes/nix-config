@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + @space
-	dmenu_run
+    rofi -show run	
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -17,6 +17,10 @@ super + Escape
 #
 # bspwm hotkeys
 #
+
+# move window to another desktop
+super + shift + {1-9}
+	id=$(bspc query --nodes --node); bspc node --to-desktop ^{1-9}
 
 # quit/restart bspwm
 super + alt + {q,r}

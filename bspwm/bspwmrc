@@ -14,9 +14,22 @@ bspc config split_ratio          0.50
 #bspc rule -a Kupfer.py focus=on
 #bspc rule -a Screenkey manage=off
 
-bspc config normal_border_color '#bbbbbb'
-bspc config border_width         2
-bspc config window_gap           8
+bspc config border_width         1
+gap=5
+
+bspc config normal_border_color '#888888'
+bspc config focused_border_color '#dddddd'
 
 bspc config focus_follows_pointer true
-bspc config focused_border_color '#444444'
+
+bspc rule -a Zathura state=tiled
+
+# remove window gap at screen edges
+bspc config window_gap $gap;
+bspc config top_padding $(($PANEL_HEIGHT-gap))
+bspc config left_padding -$gap
+bspc config right_padding -$gap
+bspc config bottom_padding -$gap
+
+# rules
+bspc rule -a emacs state=tiled

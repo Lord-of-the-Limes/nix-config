@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/ian/ianhamilton.xyz/test_tree'
+let g:netrw_dirhist_2='/usr/share/fonts/liberation'
+let g:netrw_dirhist_1='/usr/share/doc/alacritty'
