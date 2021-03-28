@@ -6,8 +6,8 @@
 xinput set-prop 'TPPS/2 IBM TrackPoint' \
                 'libinput Accel Profile Enabled' 0 1
 # change two finger scrolling behavior
-xinput set-prop 'SynPS/2 Synaptics TouchPadi' \
-                'libinput Natural Scrolling Enabled Default' 1
+xinput set-prop 'SynPS/2 Synaptics TouchPad' \ 
+                'libinput Natural Scrolling Enabled' 1
 
 # set wallpaper
 hsetroot -solid '#888888'
